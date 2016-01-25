@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100,300);
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em;
+}
+
+#navbar-wrapper {
+  background: #000;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left:0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+#navbar-wrapper h1 {
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  margin: 0 10px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50px;
+}
+
+#navbar-wrapper ul {
+  font-weight: 400;
+  height: 100vh;
+  list-style-type: none;
+  padding: 0;
+  text-align: ;
+}
+
+#navbar-wrapper a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 15px 15px;
+}
+
+#navbar-wrapper a:hover {
+  background: rgba(50, 50, 50, 1);
+}
+
+
+/*----------------------------Toggle Menu-----------------------*/
+
+
+.toggle-menu {
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+.toggle-menu:active {
+}
+
+.toggle-menu:before {
+  content: url(../img/menu.svg);
+  line-height: 50px;
+}
+
+.toggle-menu:focus {
+  pointer-events: none;
+  outline:0;
+}
+
+.toggle-menu:focus .toggle-menu-content {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.toggle-menu-content {
+  background: #000;
+  position: absolute;
+  top: 33px;
+  left:0;
+  right: 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  width: 250px;
+   transition: visibility 0.5s;
+}
