@@ -235,7 +235,7 @@ a.btn-icon {
 }
 
 #map {
-  height: 35vh;
+  height: 200px;
   pointer-events: none;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
