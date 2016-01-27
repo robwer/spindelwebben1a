@@ -34,7 +34,6 @@ ul {
   top: 0;
   left:0;
   right: 0;
-  width: 100%;
   z-index: 2;
 }
 
@@ -373,27 +372,10 @@ filter: grayscale(0%);
 -------------------BREAKPOINTS-----------------------------------------
 ----------------------------------------------------------------*/
 
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width : 480px) {
   
   h1 {
-    font-size: 2.6em;
-    margin: 0;    
-  }
-  
-  #navbar-wrapper {
-    width: 250px;
-  }
-  
-  #hem {
-    min-height: 100vh;
-  }
-
-  #hem, article {
-    padding: 80px 0;
-  }
-
-  #hem p, article .con-3-4 p {
-    font-size: 1.2em;
+    margin: 0;
   }
   
   #icon-link {
@@ -464,6 +446,30 @@ filter: grayscale(0%);
     width: 267px;
   }
   
+}
+
+@media only screen and (min-width : 768px) {
+  
+  h1 {
+    font-size: 2.6em;
+  }
+
+  #navbar-wrapper {
+    width: 250px;
+  }
+  
+  #hem {
+    min-height: 100vh;
+  }
+
+  #hem, article {
+    padding: 80px 0;
+  }
+
+  #hem p, article .con-3-4 p {
+    font-size: 1.2em;
+  }
+  
   #kontakt p {
   line-height: 3em;
   font-size: 1.1em;
@@ -502,6 +508,3 @@ filter: grayscale(0%);
   }
   
 }
-
-
-
