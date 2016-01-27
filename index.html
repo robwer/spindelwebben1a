@@ -207,11 +207,32 @@
           
       </div>
       
-    
+   
+
       
     </div>
     
   </section>
+  
+  <div id="map" class="grayscale"></div>
+    <script>
+       function initMap() {
+  var myLatLng = {lat: 59.4040805, lng: 18.33856949999995};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 10,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!'
+  });
+}
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>  
   
 </div>
   
