@@ -18,6 +18,11 @@ p {
   line-height: 1.5;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 #navbar-wrapper {
   background: #000;
   height: 50px;
@@ -42,8 +47,6 @@ p {
 #navbar-wrapper ul {
   font-weight: 400;
   height: 100vh;
-  list-style-type: none;
-  padding: 0;
   text-align: ;
 }
 
@@ -58,19 +61,26 @@ p {
   background: rgba(50, 50, 50, 1);
 }
 
-#hem {
-  background: rgba(0,0,0,0.9);;
-  color: #fff;
-  
+#kontakt {
+    padding: 1em 0;
+  }
+
+#kontakt p {
+  line-height: 2.5em;
+  letter-spacing: 1px;
 }
+
+#main-footer {
+    background: url(../img/logos/spindel.png) no-repeat 50% 30px, #000;
+    color: #fff;
+  text-shadow: 0px 0px 5px #000;  
+  }
 
 .main-wrapper {
   border-bottom: 3px solid #000;
 }
 
-article {
-  background: rgba(255,255,255,1);
-}
+
 
 .grayscale {
 -webkit-filter: grayscale(100%);
@@ -84,7 +94,8 @@ filter: grayscale(0%);
 
 .logo {
   margin-top: 50px;
-  width: 230px;
+  width: 95%;
+  max-width: 600px;
 }
 
  .row {
@@ -97,18 +108,50 @@ filter: grayscale(0%);
   padding: 1em 0;
 }
 
+.text-big {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
 
+.text-left {
+  text-align: left;
+}
+
+
+.bg-black-overlay {
+  color: #fff;
+  background: rgba(0,0,0,0.9);
+  text-shadow: 0px 0px 20px #000;
+}
 
 .bg-black {
+  background: rgba(0,0,0,1);
   color: #fff;
-  background: rgba(0,0,0,0.7);
+  text-shadow: 0px 0px 20px #000;
+}
+
+.bg-white {
+  background: rgba(255,255,255,1);
+  color: #000;
+}
+
+.bg-trans {
+  background:;
+  color: #000;
+}
+
+.border-grad {
+  background: -webkit-linear-gradient(rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.0));
+              -o-linear-gradient(rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.0));
+              -moz-linear-gradient(rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.0));
+              linear-gradient(rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.0));
+  border-bottom: none;
 }
 
 
 /*----------------------------Buttons-----------------------*/
 
 .btn {
-  background: #fff;
   box-shadow: none;
   color: #000;
   font-weight: bold;
@@ -119,34 +162,54 @@ filter: grayscale(0%);
 }
 
 a.btn {
-  border-bottom: 3px solid #000;
-  transition: all 0.2s ease 0.1s;
-  -webkit-transition: all 0.2s ease 0.1s;
+  border-bottom: 5px solid #000;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }
 
 a.btn:hover {
-  background: ;
   border-bottom: 1px solid #000;
 }
 
 
-a.btn-reverse {
+.btn-reverse {
   color: #fff;
-  text-decoration: none;
+}
+
+a.btn-reverse {
+  border-bottom: 3px solid #fff;
 }
 
 a.btn-reverse:hover {
+  border-bottom: 1px solid #fff;
+}
+
+
+a.btn-icon {
+color: #fff;
+text-decoration: none;
+}
+
+.btn-simple {
+  border-bottom: 2px solid #fff;
+  color:#fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-simple:hover {
+  border-bottom: none;
 }
 
 .scale {
-transition:All 0.5s ease;
--webkit-transition:All 0.2s ease-in-out 0.1s;
--moz-transition:All 0.2s ease-in-out 0.1s;
--o-transition:All 0.2s ease-in-out 0.1s;
+transition: all 0.4s ease;
+-webkit-transition: all 0.4s ease;
+-moz-transition: all 0.4s ease;
+-o-transition: all 0.4s ease;
 }
 
 .scale:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 /*----------------------------Toggle Menu-----------------------*/
@@ -192,7 +255,58 @@ transition:All 0.5s ease;
    transition: visibility 0.5s;
 }
 
+/*-------------------------------------ID Team test------------------*/
 
+
+
+
+#theteam h1{
+  text-align: center;
+  padding-top: 50px;
+  margin: 0;
+}
+
+.static-center {
+  width: 267px;
+  margin: 0 auto;
+}
+
+.img-container {
+    position:relative;
+  padding-right: 0;
+  left:;
+  height: 400px;
+  width: 267px;
+}
+
+.img-container img {
+  border-right: 3px solid #000;
+  border-left: 3px solid #000;
+  height: 400px;
+  width: 267px;
+}
+
+.image-static
+{    
+  position:absolute;
+  left:0;
+  top:0;
+  
+}
+
+.text-inset {
+  background: rgba(0,0,0,0.5);
+  text-align: left;
+  text-shadow: 0px 0px 5px #000;
+  color:#fff;
+  position:absolute;
+  padding: 5px;
+  width: 160px;
+  height: 150px;
+  left:3px;
+  bottom:3px;
+  z-index:1;
+}
 
 /*-----------------------------------Grid---------------------------------*/
 
@@ -250,13 +364,42 @@ transition:All 0.5s ease;
   
 }
 
-  #hem [class*="col-"] {
-    margin: 50px 0;
+  #hem p {
+    margin-bottom: 80px;
   }
   
   #hem h1 {
-    margin: 50px 0;
+    margin-top: 50px;
   }
+  
+  #kontakt {
+    padding: 3em 0;
+  }
+  
+  #kontakt p {
+  line-height: 2.2em;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+  
+  .static-center {
+  width: 801px;
+}
+  #main-footer ul, #main-footer .con-1-5 {
+    text-align: left;
+}
+  
+  .static-center {
+  width: 267px;
+  margin: 0 auto;
+}
+
+.img-container {
+  height: 400px;
+  width: 267px;
+}
+
+
   
 }
 
@@ -267,16 +410,14 @@ transition:All 0.5s ease;
   }
   
   #hem {
-    height: 100vh;
+    min-height: 100vh;
   }
 
   #hem, article {
     padding: 80px 0;
   }
   
-  .logo {
-    margin-top: 0;
-  }
+  
 
   h1 {
     font-size: 2.6em;
@@ -290,9 +431,13 @@ transition:All 0.5s ease;
     font-size: 1.2em;
   }
   
-  .row {
-    padding: 2em;
-  }
+  #kontakt p {
+  line-height: 3em;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+
+  
   
   .con-3-4 {
     width: 75%;
@@ -308,59 +453,25 @@ transition:All 0.5s ease;
     width: 33.33%;
     margin: 0 auto;
   }
-
+.static-center {
+  width: 801px;
+}
   
 }
 
 
 @media only screen and (min-width : 992px) {
   .container-center {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
-
-}
-
-/*-------------------------------------ID Team test------------------*/
-#theteam h1{
-  text-align: center;
-  text-shadow: 0px 0px 20px #000;
-  margin: 0;
-}
-
-.img-container {
-    position:relative;
-  padding-right: 0;
-  left:;
-  height: 400px;
-  width: 267px;
-}
-
-.img-container img {
-  border: 3px solid #fff;
-  height: 400px;
-  width: 267px;
-}
-
-.image-static
-{    
-  position:absolute;
-  left:0;
-  top:0;
   
+  .con-3-4 {
+    width: 50%;
+    margin: 0 auto;
+  }
+
 }
 
-.text-inset {
-  background: rgba(0,0,0,0.5);
-  text-align: left;
-  text-shadow: 0px 0px 5px #000;
-  color:#fff;
-  position:absolute;
-  padding: 5px;
-  width: 160px;
-  height: 150px;
-  left:3px;
-  bottom:3px;
-  z-index:1;
-}
+
 

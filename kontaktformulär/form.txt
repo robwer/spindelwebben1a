@@ -1,0 +1,24 @@
+        
+        <div id="kontaktform">
+        
+        <form method="post" action="">
+          
+          <fieldset>
+          <input type="text" placeholder="Name">
+          </fieldset>
+          
+          <fieldset>
+          <input type="text" placeholder="Mail">
+          </fieldset>
+          
+          <fieldset>
+          <input type="text" placeholder="Meddelande">
+          </fieldset>
+          
+          <fieldset>
+          <button type="submit">Skicka</button>
+          </fieldset>
+          
+        </form>
+        
+      </div>
