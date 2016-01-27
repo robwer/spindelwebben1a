@@ -198,7 +198,8 @@ article .container-center {
   font-size: 6em;
 }
 
-#galleri a {
+#galleri img {
+  border: 3px solid #000;
 }
 
 
