@@ -373,10 +373,27 @@ filter: grayscale(0%);
 -------------------BREAKPOINTS-----------------------------------------
 ----------------------------------------------------------------*/
 
-@media only screen and (min-width : 480px) {
+@media only screen and (min-width : 768px) {
   
   h1 {
-    margin: 0;
+    font-size: 2.6em;
+    margin: 0;    
+  }
+  
+  #navbar-wrapper {
+    width: 250px;
+  }
+  
+  #hem {
+    min-height: 100vh;
+  }
+
+  #hem, article {
+    padding: 80px 0;
+  }
+
+  #hem p, article .con-3-4 p {
+    font-size: 1.2em;
   }
   
   #icon-link {
@@ -445,30 +462,6 @@ filter: grayscale(0%);
   .img-container {
     height: 400px;
     width: 267px;
-  }
-  
-}
-
-@media only screen and (min-width : 768px) {
-  
-  h1 {
-    font-size: 2.6em;
-  }
-
-  #navbar-wrapper {
-    width: 250px;
-  }
-  
-  #hem {
-    min-height: 100vh;
-  }
-
-  #hem, article {
-    padding: 80px 0;
-  }
-
-  #hem p, article .con-3-4 p {
-    font-size: 1.2em;
   }
   
   #kontakt p {
