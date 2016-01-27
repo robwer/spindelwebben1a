@@ -253,10 +253,6 @@ a.btn-icon {
   }
 
 .stick-bottom {
-  position: relative;
-  bottom: 0;
-  right: 0;
-  left: 0;
 }
 
 /*----------------------------------------------------------------
@@ -264,7 +260,7 @@ a.btn-icon {
 ----------------------------------------------------------------*/
 
 #galleri {
-  min-height: 500px;
+  min-height: 800px;
   padding-left: 10px;
 }
 
@@ -276,7 +272,7 @@ a.btn-icon {
 #galleri h1 {
   margin: 0;
   padding-top: 50px;
-  font-size: 4em;
+  font-size: 2em;
 }
 
 #galleri img {
@@ -398,6 +394,10 @@ filter: grayscale(0%);
   line-height: 2.2em;
   font-size: 1.1em;
   letter-spacing: 1px;
+  }
+  
+  #galleri h1 {
+    font-size: 4em;
   }
   
   #main-footer ul, #main-footer .con-1-5 {
